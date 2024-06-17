@@ -56,7 +56,7 @@ contract collageFinder
     // Function to demonstrate revert statement to check eligiblity for any collage.
     function checkforAny(uint256 currentMarks)  external onlyOwner {
         if (currentMarks <= 45) {
-            revert("you are not having minimul marks for any collage.");
+            revert("you are not having minimum marks for any collage.");
         }
         marks = currentMarks;
         emit marksChanged(currentMarks);
